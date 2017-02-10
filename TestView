@@ -35,6 +35,8 @@ public class TestView extends View {
         Paint paint = new Paint();
         paint.setColor(Color.GREEN);
         canvas.drawLine(0, getHeight() / 2, getWidth(), getHeight() / 2, paint);
+         paint.setColor(Color.BLUE);
+        canvas.drawCircle(getWidth() / 2, getHeight() / 2, getHeight() > getWidth() ? getWidth() / 2 : getHeight() / 2, paint);
     }
 
 }
